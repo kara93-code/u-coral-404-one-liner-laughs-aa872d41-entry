@@ -1,14 +1,18 @@
 // One-Liner Laughs — entry program.
 //
-// Writes one funny line about a suitcase that came home heavier
-// than it left to /output/entry.txt (or $MAKEFUN_OUTPUT_DIR/entry.txt
-// when set).
+// Writes one funny line about a haircut that disappointed both
+// the customer and the reference photo to /output/entry.txt
+// (or $MAKEFUN_OUTPUT_DIR/entry.txt when set).
+//
+// The joke turns on a single surprise: the reader expects only
+// the customer to be disappointed, and the last words reveal
+// the photo is disappointed too.
 
 import { chmodSync, mkdirSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const LINE =
-  "My suitcase weighed 23 kilos at check-in and 24 at home, which means it ate better on holiday than I did.";
+  "My barber asked if I wanted my hair like the photo, so I said yes, and now the photo and I are both disappointed.";
 
 const LIMIT = 200;
 
